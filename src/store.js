@@ -30,6 +30,7 @@ export default new Vuex.Store({
         id: 1,
         date: '14/05/2019',
         deviceId: 1,
+        fullName: 'C. Ronaldo',
       },
     ],
     today: '14/05/2019',
@@ -46,7 +47,15 @@ export default new Vuex.Store({
     }
   },
   mutations: {
-    // Create mutations
+    addBookedDate (state, payload) {
+      const currentIdNumber = state.bookedDates[state.bookedDates.length - 1].id;
+      state.bookedDates.push({
+        id: currentIdNumber + 1,
+        date: payload.date,
+        deviceId: payload.deviceId,
+        fullName: payload.name,
+      })
+    },
   },
   actions: {
     // Create actions
