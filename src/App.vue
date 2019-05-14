@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavigationBar />
-    <div class="content-container">
+    <div class="container my-container">
       <router-view></router-view>
     </div>
   </div>
@@ -23,8 +23,11 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 30px;
+}
+
+.my-container {
+  margin-top: 20px;
 }
 </style>
