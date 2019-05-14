@@ -84,7 +84,7 @@ export default {
         alert('Device not available on that date');
         return
       }
-      this.$store.commit('addBookedDate', {
+      this.$store.dispatch('addBookedDate', {
         date: this.date,
         deviceId: this.selectedDeviceId,
         name: this.name,

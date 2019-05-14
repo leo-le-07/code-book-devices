@@ -58,6 +58,10 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    // Create actions
+    addBookedDate (context, payload) {
+      setTimeout(() => {
+        context.commit('addBookedDate', payload);
+      }, 3000)
+    }
   },
 });
