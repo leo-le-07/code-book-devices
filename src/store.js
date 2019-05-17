@@ -33,7 +33,7 @@ export default new Vuex.Store({
         fullName: 'C. Ronaldo',
       },
     ],
-    today: '14/05/2019',
+    today: '17/05/2019',
   },
   getters: {
     getBookedDates: (state) => state.bookedDates,
